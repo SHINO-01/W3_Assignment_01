@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    border: 2px solid red;
+}
+
+.back-arrow {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    max-width: 85%;
+    max-height: 50%;
+    margin: 20px auto;
+    padding: 0 2vw;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 3fr 2fr; /* Increase the left side */
+    gap: 2px;
+    border: 2px solid pink;
+}
+.main-image {
+    border: 2px solid red;
+    display: inline-block; /* Make .main-image wrap around its content */
+    padding: 5px;
+}
+.main-image img {
+    width: 100%; /* Let the image naturally size within .main-image */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* 
+  .small-images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+*/
+
+.small-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+    gap: 10px;
+    border: 2px solid red;
+}
+
+.small-images img, 
+.small-images .image-overlay {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-overlay {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-overlay span {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 2px solid red;
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.share {
+    background-color: #007bff;
+    color: white;
+}
+
+.save {
+    background-color: #ff4b4b;
+    color: white;
+}
