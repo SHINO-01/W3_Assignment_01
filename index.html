@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div class="nav-links">
-                <a href="#">United States</a>
+                <a href="#"><i class="fa-solid fa-globe"></i> United States</a>
                 <a href="#">Trip Boards</a>
                 <a href="#">List your property</a>
                 <a href="#">Help</a>
@@ -23,9 +23,11 @@
     <main>
         <div class="buttons">
             <a href="#" class="back-arrow">← See all properties</a>
-            <button class="share">Share</button>
-            <button class="save">Save</button>
-        </div>
+            <div class="right-buttons">
+                <button class="share">Share <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                <button class="save">Save <i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>        
         <div class="gallery">
             <div class="main-image">
                 <img src="images/image02.png" alt="Main Property View">
@@ -41,5 +43,81 @@
             </div>
         </div>
     </main>
+    <div class="property-content">
+        <div class="left-content">
+            <nav class="tabs">
+                <a href="#" class="tab tab-active">Overview</a>
+                <a href="#" class="tab">Amenities</a>
+                <a href="#" class="tab">Policies</a>
+            </nav>
+            <p class="property-type">Entire Home</p>
+            <h1 class="property-title">Juneau Vacation Home: Stunning View + Beach Access</h1>
+
+            <div class="rating-section">
+                <span class="rating">9.8</span>
+                <span class="rating-text">Exceptional</span>
+                <a href="#" class="reviews-link">See all 24 reviews</a>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fa-solid fa-door-open"></i>
+                    <span>2 bedrooms</span>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-bath"></i>
+                    <span>1 bathroom</span>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>2 sleeps</span>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-chart-area"></i>
+                    <span>24 sqft.</span>
+                </div>
+            </div>
+            <section class="amenities">
+                <h2>Popular amenities</h2>
+                <div class="amenities-grid">
+                    <div class="amenity-item">
+                        <i class="fa-solid fa-stroopwafel"></i>
+                        <span>Barbecue grill</span>
+                    </div>
+                    <div class="amenity-item">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 8H5C3.89 8 3 8.89 3 10V18C3 19.11 3.89 20 5 20H19C20.11 20 21 19.11 21 18V10C21 8.89 20.11 8 19 8Z"/>
+                        </svg>
+                        <span>Washer</span>
+                    </div>
+                    <div class="amenity-item">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M17 12H7V14H17V12ZM19 3H5C3.89 3 3 3.89 3 5V19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.89 20.11 3 19 3Z"/>
+                        </svg>
+                        <span>Outdoor Space</span>
+                    </div>
+                    <div class="amenity-item">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 3H5C3.89 3 3 3.89 3 5V19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.89 20.11 3 19 3Z"/>
+                        </svg>
+                        <span>Parking available</span>
+                    </div>
+                    <div class="amenity-item">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 3H5C3.89 3 3 3.89 3 5V19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.89 20.11 3 19 3Z"/>
+                        </svg>
+                        <span>Kitchen</span>
+                    </div>
+                    <div class="amenity-item">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 3H5C3.89 3 3 3.89 3 5V19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.89 20.11 3 19 3Z"/>
+                        </svg>
+                        <span>Dryer</span>
+                    </div>
+                </div>
+                <a href="#" class="see-all">See all property amenities →</a>
+            </section>
+        </div>
+    </div>
 </body>
 </html>

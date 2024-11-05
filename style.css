@@ -6,14 +6,28 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: burlywood;
+    background-color: #FBF9FB;
 }
 /*header part*/
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Align all content to the right */
+    align-items: center;
     padding: 10px 20px;
-    background-color: bisque;
+    background-color: #93BAD7;
+    height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .back-arrow {
@@ -21,8 +35,8 @@ header {
     color: #007bff;
 }
 .nav-links{
-    background-color: bisque;
-    color: bisque;
+    background-color: #93BAD7;
+    color: #93BAD7;
 }
 .nav-links a {
     margin-left: 15px;
@@ -102,11 +116,24 @@ main {
 }
 /*save and share buttons*/
 .buttons {
-    margin-top: 10px;
     display: flex;
-    gap: 10px;
+    justify-content: space-between; /* Space between left link and right buttons */
     align-items: center;
-    border: 2px solid red;
+    margin-top: 10px;
+    max-width: 85%;
+    margin: 20px auto;
+    
+}
+
+.back-arrow {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+.right-buttons {
+    display: flex;
+    gap: 10px; /* Control spacing between Share and Save buttons */
 }
 
 button {
@@ -114,7 +141,7 @@ button {
     padding: 10px 15px;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .share {
@@ -126,6 +153,7 @@ button {
     background-color: #ff4b4b;
     color: white;
 }
+
 
 /*-------------------------------------------------------ICONS-----------------------------------*/
 .fa-images{
