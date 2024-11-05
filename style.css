@@ -49,13 +49,16 @@ main {
     max-height: 50%;
     margin: 20px auto;
     padding: 0 2vw;
+    border: 2px solid red;
 }
 
 .gallery {
     display: grid;
     grid-template-columns: 3fr 2fr; /* Increase the left side */
     gap: 5px;
+    border: 2px solid red;
 }
+
 .main-image {
     display: inline-block; /* Make .main-image wrap around its content */
     padding: 0px;
@@ -120,9 +123,9 @@ main {
     justify-content: space-between; /* Space between left link and right buttons */
     align-items: center;
     margin-top: 10px;
-    max-width: 85%;
+    max-width: 100%;
     margin: 20px auto;
-    
+
 }
 
 .back-arrow {
@@ -153,7 +156,134 @@ button {
     background-color: #ff4b4b;
     color: white;
 }
+/*-------------------------------------------------TABBED NSVS____________________________*/
+.property-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-xl);
+}
 
+.tabs {
+    display: flex;
+    gap: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+.tab {
+    padding: var(--spacing-md) 0;
+    color: var(--text-color);
+    text-decoration: none;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.tab.active {
+    font-weight: 500;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+/*______________________________________________________GG______________________________________*/
+.property-section {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.area-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.map {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.location {
+    position: absolute;
+    bottom: 40px;
+    left: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.landmarks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.landmark-item {
+    display: grid;
+    grid-template-columns: 24px 1fr auto;
+    align-items: center;
+    gap: 12px;
+}
+
+.drive-time {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.icon {
+    fill: #4b5563;
+}
+
+a.see-all,
+a.see-more,
+a.view-map {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+a.view-map {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: #fff;
+}
 
 /*-------------------------------------------------------ICONS-----------------------------------*/
 .fa-images{
