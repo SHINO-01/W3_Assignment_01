@@ -49,14 +49,13 @@ main {
     max-height: 50%;
     margin: 20px auto;
     padding: 0 2vw;
-    border: 2px solid red;
+
 }
 
 .gallery {
     display: grid;
     grid-template-columns: 3fr 2fr; /* Increase the left side */
     gap: 5px;
-    border: 2px solid red;
 }
 
 .main-image {
@@ -197,7 +196,6 @@ button {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    border: 2px solid red;
 }
 
 h2 {
